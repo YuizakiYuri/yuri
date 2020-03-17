@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+
+/* --------------------------------------------- */
+
+form#mail_form{
+  width:100%;
+  margin : 10px 0px 10px 0px;
+  border-top : 1px solid #b0b0b0;
+  border-right : 1px solid #cccccc;
+  border-bottom : 1px solid #b0b0b0;
+  border-left : 1px solid #cccccc;
+  border-radius : 7px;
+	background : url(../image/bg-form.png) repeat 0 0;
+  text-shadow : 0px 1px 0px #ffffff;
+}
+form#mail_form dl{
+  padding : 15px 25px;
+  overflow : hidden;
+}
+form#mail_form dl dt{
+  width:20%;
+  clear : both;
+  float : left;
+  text-align : right;
+  border-top : 1px solid #cccccc;
+	padding : 12px 0 10px;
+	background : url(../image/border-shine.png) repeat-x 0 0;
+}
+form#mail_form dl dd{
+	width:65%;
+  float : left;
+  border-top : 1px solid #cccccc;
+	padding : 16px 0 10px 30px;
+	background : url(../image/border-shine.png) repeat-x 0 0;
+}
+form#mail_form dl dt:first-child,
+form#mail_form dl dt:first-child+dd{
+  border : none;
+  background : none;
+}
+form#mail_form dl dt span{
+  display : block;
+  font-size : 85%;
+  color : #6B1111;
+}
+form#mail_form dl dt span.essential{ /* JavaScriptによってdt内に挿入 */
+  display : inline;
+  color : #ff3030;
+  font-weight : bold;
+  margin-right : 1em;
+}
+form#mail_form dd div{ /* 入力エラーメッセージがJavaScriptによって出現 */
+  color : #ff0000;
+}
+
+form#mail_form input{
+  height : 1.6em;
+  border : 1px solid #cccccc;
+  border-radius : 3px;
+  background : #fafafa;
+}
+form#mail_form input:focus,
+form#mail_form textarea:focus{
+  box-shadow : 0px 0px 5px #55ccff;
+  border : 1px solid #55ccff;
+  background : #ffffff;
+}
+form#mail_form input#name_1,
+form#mail_form input#name_2{
+  width : 100%;
+}
+form#mail_form input#read_1,
+form#mail_form input#read_2{
+  width : 90px;
+}
+form#mail_form input#mail_address,
+form#mail_form input#mail_address_confirm{
+  width : 100%;
+}
+form#mail_form ul li{
+  list-style-type : none;
+  margin-bottom : 0.5em;
+}
+form#mail_form ul li label:hover{
+  cursor : pointer;
+}
+form#mail_form ul li input{
+  height : auto;
+  margin-right : 0.5em;
+}
+form#mail_form input#postal{
+  width : 100px;
+}
+form#mail_form input#address_1,
+form#mail_form input#address_2{
+  width : 100%;
+  display : block;
+  margin-bottom : 7px;
+}
+form#mail_form input#phone{
+  width : 100px;
+}
+form#mail_form textarea#mail_contents{
+  width:100%;
+  resize : vertical;
+  border : 1px solid #cccccc;
+  border-radius : 3px;
+  background : #fafafa;
+}
+form#mail_form input#mail_submit_button,form#mail_form input#mail_reset_button{
+  width : 30%;
+  height : auto;
+  margin:5px auto;
+  padding : 4px 10px;
+  vertical-align : middle;
+  color : #444444;
+  background : #eeeeee;
+  border : 1px solid #cccccc;
+  border-radius : 3px;
+  font-family : "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro W3","Hiragino Kaku Gothic Pro",Osaka,"メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",Verdana,Arial,sans-serif;
+  font-weight : bold;
+}
+form#mail_form input#mail_submit_button:hover,form#mail_form input#mail_reset_button:hover{
+  cursor : pointer;
+  color : #106dff;
+  background : #e0e0e0;
+}
+
+/* --JavaScript------------------------------------------- */
+
+
+
+
+/* --responsive------------------------------------------- */
+
+/* 640pixel start */
+@media screen and (max-width : 640px){
+
+form#mail_form{
+  width : 95%;
+}
+form#mail_form dl{
+  width : auto;
+  padding : 2.5% 2.5%;
+}
+form#mail_form dl dt{
+  width : auto;
+  float : none;
+  text-align : left;
+	padding : 10px 0 5px;
+	font-weight : bold;
+}
+form#mail_form dl dd{
+  width : auto;
+  float : none;
+  border-top : none;
+	padding : 0px 0 10px 0px;
+	background : none;
+}
+form#mail_form dl dt span{
+  font-weight : normal;
+}
+form#mail_form dl dt span.essential{ /* JavaScriptによってdt内に挿入 */
+	font-weight : bold;
+}
+
+
+form#mail_form input#name_1,
+form#mail_form input#name_2,
+form#mail_form input#read_1,
+form#mail_form input#read_2,
+form#mail_form input#mail_address,
+form#mail_form input#mail_address_confirm,
+form#mail_form input#postal,
+form#mail_form input#address_1,
+form#mail_form input#address_2,
+form#mail_form input#phone,
+form#mail_form textarea#mail_contents{
+  max-width : 100%;
+}
+
+
+}
+/* 640pixel end */
+
