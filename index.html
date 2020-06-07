@@ -61,21 +61,27 @@
     <p>上のリンクからまとめたzipがDLができます。</p>
     <p>サイト上には置いていないサンプルもあります。</p>
     <div class="audioplayer">
-        <div class="sample_block">01_地声<audio class="audio" src="./sample/sample01.mp3" preload="none"></audio></div>
-        <div class="sample_block">02_ダウナー系（高）<audio class="audio" src="./sample/sample02.mp3" preload="none"></audio></div>
-        <div class="sample_block">03_控えめ後輩（高）<audio src="./sample/sample03.mp3" preload="none"></audio></div>
-        <div class="sample_block">04_関西弁ロリ（高）<audio class="audio" src="./sample/sample04.mp3" preload="none"></audio></div>
-        <div class="sample_block">05_ナチュラル（中）<audio class="audio" src="./sample/sample05.mp3" preload="none"></audio></div>
-        <div class="sample_block">06_大人っぽい（中）<audio class="audio" src="./sample/sample06.mp3" preload="none"></audio></div>
-        <div class="sample_block">07_妖艶（中）<audio class="audio" src="./sample/sample07.mp3" preload="none"></audio></div>
-        <div class="sample_block">08_無機質（低）<audio class="audio" src="./sample/sample08.mp3" preload="none"></audio></div>
-        <div class="sample_block">09_泣き、怯え（中）<audio class="audio" src="./sample/sample09.mp3" preload="none"></audio></div>
-        <div class="sample_block">10_元気な女性（低）<audio class="audio" src="./sample/sample10.mp3" preload="none"></audio></div>
-        <div class="sample_block">11_真面目（低）<audio class="audio" src="./sample/sample11.mp3" preload="none"></audio></div>
-        <div class="sample_block">12_京都弁（中）<audio class="audio" src="./sample/sample12.mp3" preload="none"></audio></div>
-        <div class="sample_block">13_無邪気（少年）<audio class="audio" src="./sample/sample13.mp3" preload="none"></audio></div>
-        <div class="sample_block">14_病み（少年）<audio class="audio" src="./sample/sample14.mp3" preload="none"></audio></div>
-
+      <p><audio src="./sample/sample01.mp3" preload="none" onclick="playthis(1);" controls="controls"></audio></p>
+    </div>
+      <ul>      
+      <div class="sample_block">
+        <li id="list1"><a href="javascript:playthis(1)">01_地声</a></li>
+        <li id="list2"><a href="javascript:playthis(2)">02_ナチュラル演技な幼なじみ</a></li>
+        <li id="list3"><a href="javascript:playthis(3)">03_元気で癒し系な妹キャラ</a></li>
+        <li id="list4"><a href="javascript:playthis(4)">04_ダウナー後輩</a></li>
+        <li id="list5"><a href="javascript:playthis(5)">05_綺麗め美少女</a></li>
+        <li id="list6"><a href="javascript:playthis(6)">06_快活な部活の先輩</a></li>
+        <li id="list7"><a href="javascript:playthis(7)">07_料理下手なママ</a></li>
+        <li id="list8"><a href="javascript:playthis(8)">08_事務的なメイド</a></li>
+        <li id="list9"><a href="javascript:playthis(9)">09_女王様</a></li>
+        <li id="list10"><a href="javascript:playthis(10)">10_女騎士</a></li>
+        <li id="list11"><a href="javascript:playthis(11)">11_病み（叫び注意）</a></li>
+        <li id="list12"><a href="javascript:playthis(12)">12_洋画風</a></li>
+        <li id="list13"><a href="javascript:playthis(13)">13_少年</a></li>
+        <li id="list14"><a href="javascript:playthis(14)">14_関西弁ロリ</a></li>
+        <li id="list15"><a href="javascript:playthis(15)">15_京都弁</a></li>
+      </div>
+      </ul>
     <br></div>
     <br>
     <h3>歌</h3>
@@ -201,6 +207,7 @@
 <script src="https://apis.google.com/js/platform.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script type="text/javascript" src="js/mailform.js"></script>
+<script type="text/javascript" src="js/audiolist.js"></script>
 <!--read more-->
 <script>
 $(function(){
@@ -231,12 +238,6 @@ $('#mail_form').attr('action','mailform.php');
 return true;
 }
 </script>
-<script src="js/audio.min.js"></script>
-<script>
-audiojs.events.ready(function() {
-var as = audiojs.createAll();
-});
-</script>
 <!--mail form-->
 <!--sp menu-->
 <script type="text/javascript">
@@ -250,6 +251,57 @@ jQuery(document).on('click', '#modal-overlay', function() {
   jQuery('#modal-overlay').fadeOut('1500');
   jQuery('.menu-container .menu').fadeOut('1500');
 });
+</script>
+<!--audio list-->
+<script type="text/javascript">
+// 再生ファイル配置ディレクトリ 相対パスではうまくいかない場合があります
+var dir = "https://yu.sflabo.com/sample/";
+
+// 現在再生中のマーク
+var now = " ← now playing";
+
+// オーディオタグの取得
+var media = document.getElementsByTagName("audio")[0];
+
+// 再生リストの作成
+var list = new Array(15);
+list[1] = "sample01.mp3";
+list[2] = "sample02.mp3";
+list[3] = "sample03.mp3";
+list[4] = "sample04.mp3";
+list[5] = "sample05.mp3";
+list[6] = "sample06.mp3";
+list[7] = "sample07.mp3";
+list[8] = "sample08.mp3";
+list[9] = "sample09.mp3";
+list[10] = "sample10.mp3";
+list[11] = "sample11.mp3";
+list[12] = "sample12.mp3";
+list[13] = "sample13.mp3";
+list[14] = "sample14.mp3";
+list[15] = "sample15.mp3";
+// 再生リストの長さ
+var length = list.length;
+
+// クッキーの取得
+var COOKIE = new Array();
+if (document.cookie) {
+  var cookies = document.cookie.split("; ");
+  for (var i = 0; i < cookies.length; i++) {
+    var str = cookies[i].split("=");
+    COOKIE[str[0]] = unescape(str[1]);
+  }
+}
+
+// クッキーにボリュームが設定されている場合はその値をボリューム値とする
+var volume = isNaN(COOKIE["volume"]) ? 0.5 : COOKIE["volume"];
+media.volume = volume;
+
+// 再生が終わったら次を再生
+media.onended = function(){ playnext(this.src); };
+
+// ページを離れるときに現在のボリューム値をクッキーにセット
+window.onbeforeunload = function(){ setCookie("volume", media.volume); };
 </script>
 <!--sp menu-->
 </body>

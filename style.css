@@ -340,8 +340,9 @@ input[type="checkbox"].on-off:checked + dl {
 	text-align:left;
 }
 .sample_block{
-	width: 25%;
-	margin: 5% 3% 0%;
+	width: 100%;
+	margin: 5% 8% 0%;
+	display:inline-block;
 }
 .more_btn {
 	background: #EEE;
