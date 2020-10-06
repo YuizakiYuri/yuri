@@ -60,6 +60,9 @@
 		color: rgba(63,23,24,1.00);
 	}
 
+	.hidden{
+		visibility:hidden;
+	}
 	.phone_area{
 	  display:none!important;
 	}
