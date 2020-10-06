@@ -189,7 +189,10 @@
 ※必ず件名を「Root-9メールフォーム／お名前」としてください。<br><br>
 必ず返信できるわけではないのですが、作品のご感想などもお待ちしております！<br>
     <br>
-  <form id="mail_form" method="post" action="/thanks.html" netlify>
+  <form id="mail_form" method="post" netlify-honeypot="bot-field" data-netlify="true" data-netlify-recaptcha="true" action="/thanks.html" netlify>
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
     <dl>
     <!-- text -->
     <dt>お名前<span>Your Name</span></dt>
@@ -231,8 +234,9 @@
 </textarea><div></div>
     </dd>
     <!-- charset -->
+
     <dt>送信<span>Submit</span></dt>
-      <dd><input type="submit" id="mail_submit_button" name="mail_submit_button" value="Submit">
+      <dd><div data-netlify-recaptcha="true"></div>　<input type="submit" id="mail_submit_button" name="mail_submit_button" value="Submit">
       &nbsp;
       <input type="reset" id="mail_reset_button" name="mail_reset_button" value="Reset"></dd>
     </dl>
