@@ -48,36 +48,36 @@ header p {
 	display: none;
 }
 	
-#mainvisual{
+#top{
 	width:100%;
 	height: auto;
     margin: 0 auto;
 }
-#mainvisual h1{
+#top h1{
 	top: 55%;
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	z-index: 99;
 }
-#mainvisual h1 img{
+#top h1 img{
 	width:100%;
 }
-#mainvisual p{
+#top p{
 	top: 20px;
 	width: 30px;
 }
-#mainvisual p img{
+#top p img{
 	width: 30px;
 }
-#mainvisual .flower {
+#top .flower {
 	position: absolute;
 	width: 100%;
 	bottom: -8%;
 	left: 0;
 	z-index: 90;
 }
-#mainvisual .catch{
+#top .catch{
 	top:0%;
 	width: 100%;
 	left: 0%;
@@ -219,7 +219,7 @@ li.tracklist-count:after{
 	margin: 0 auto 80px;
 }
 
-/* ---------------------------------------- youtube ----------------------------------------*/
+/*------------------------------ youtube ------------------------------*/
 #youtube  {
   	width: 100%;
   	padding-top: 56.25%;
@@ -251,7 +251,7 @@ li.tracklist-count:after{
 	padding-bottom: 40px;
 }
 
-/* ---------------------------------------- Staff ----------------------------------------*/
+/* ------------------------------ staff ------------------------------*/
 .staff {
 	width: 100%;
 }

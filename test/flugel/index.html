@@ -5,23 +5,20 @@
 
 <title>銀剣のフリューゲル｜Parfaitmellia 2nd Album</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!-- サイト設定 -->
-<meta name="keywords" content="銀剣のフリューゲル,Flugel  des  Silberschwertes,結崎有理,ミナグ,Parfaitamellia" /> 
-<meta name="description" content="Parfaitamellia 2nd Album「銀剣のフリューゲル」" />
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta name="keywords" content="銀剣のフリューゲル,Flugel  des  Silberschwertes,結崎有理,ミナグ,Parfaitamellia" /> 
 <meta name="description" content="【M3-2020秋】想い出と共に眠れ。Parfaitamelliaが贈る、人喰イと戦う少年少女を描くボーカルアルバム「銀剣のフリューゲル」。第一展示場H-08。" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <meta property="og:locale" content="ja_JP">
 <meta property="og:type" content="article">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@parfaitamellia">
+<meta name="twitter:creator"     content="@parfaitamellia" />
 <meta property="og:site_name" content="銀剣のフリューゲル">
 <meta property="og:title" content="Parfaitamellia 2nd Album「銀剣のフリューゲル」">
 <meta property="og:url" content="https://parfaitamellia.com/sp/flugel/">
 <meta property="og:description" content="【M3-2020秋】想い出と共に眠れ。Parfaitamelliaが贈る、人喰イと戦う少年少女を描くボーカルアルバム「銀剣のフリューゲル」。第一展示場H-08。">
-<meta property="og:image" content="https://parfaitamellia.com/sp/flugel/img/ogp.png">
+<meta property="og:image" content="https://parfaitamellia.com/sp/flugel/img/card.png">
 
 <link rel="apple-touch-icon" sizes="180x180" href="https://parfaitamellia.com/sp/flugel/img/appletouch.jpg">
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -30,11 +27,11 @@
 <!-- css -->
 <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
 <link rel="stylesheet" type="text/css" href="css/sp.css" media="all" />
-
 <!-- web font -->
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 </head>
 <body>
 
@@ -42,19 +39,19 @@
 	<div class="loader">Loading...</div>
 </div>
 
-<!-- メインビジュアル -->
-<div id="mainvisual">
+<!-- top -->
+<section id="top">
   <span class="flower fade-in-bottom"><img src="img/back_flower.png" width="100%"></span>
   <div class="main_img"></div>
   <h1 class="fade-in-bottom"><img src="img/main_logo.png"></h1>
   <p class="catch fade-in-bottom"><img src="img/catch.png"></p>
-</div>
-<!-- メインビジュアル -->
+</section>
+<!-- top -->
 
 <!-- Story -->
 <section id="story" class="clearfix">
 	<div id="youtube">
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/Hy1EjiWhJSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/1Vd1rSOF2Ds" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 	<p class="down-to-top"><img src="img/story.png" width="700"></p>
 </section>
@@ -151,6 +148,7 @@
 	</div>
 </section>
 <!-- Staff -->
+
 <!-- footer -->
 <footer>
 	<p class="copyright"><small>Copyright 2020 Parfaitamellia All rights reserved.</small></p>	
@@ -167,10 +165,6 @@ $(function(){
 		loader.fadeOut();
 	});
 
-	//ページの読み込みが完了してなくても3秒後にアニメーションを非表示にする
-	setTimeout(function(){
-		loader.fadeOut();
-	},3000);
 });
 </script>
 <!--loading-->
