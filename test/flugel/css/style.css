@@ -1,0 +1,447 @@
+@charset "utf-8";
+/* CSS Document */
+
+.pc{
+	display:block !important;
+}
+.sp{
+	display:none !important;
+}
+
+body {
+	font-family: 'Lato', 'Noto Sans JP', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	color:#222;
+	font-size:1.3rem;
+	line-height:1.75;
+	letter-spacing:0.05em;
+	text-align:justify;
+}
+
+a { color: #222; text-decoration: none; transition:0.3s ease-in-out; }
+a:hover { color:#8c73ae; }
+
+::selection{ background-color:#eee; }
+::-moz-selection{ background-color:#eee; }
+
+html,body {
+	height: 100%;
+	font-size: 62.5%; 
+}
+body { min-width:1240px; max-width: 1920px; margin: auto; }
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*============================================================================
+
+	#mainvisual
+
+============================================================================*/
+#mainvisual{
+	position:relative;
+	width: 100%;
+	height: 100%;
+	min-height: 750px;
+	max-height: 1080px;
+	margin: auto;
+	display: block;
+}
+#mainvisual h1{
+	position: absolute;
+	z-index: 99;
+	bottom: 0;
+	margin-left: 30%;
+	text-align: center;
+}
+#mainvisual p{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -350px;
+	margin-left: -200px;
+	z-index: 99;
+}
+#mainvisual .main_img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/back_top.png);
+	background-size: cover;
+	background-position: center top;
+}
+#mainvisual .flower {
+	position: absolute;
+	width: 100%;
+	bottom: -8px;
+	left: 0;
+	z-index: 90;
+}
+#mainvisual .catch{
+	position: absolute;
+	top: 35%;
+	left: 100%;
+	width: 120px;
+	height: auto;
+}
+/*============================================================================
+
+	Story
+
+============================================================================*/
+#story {
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-top: 130px;
+	padding-bottom: 130px;
+	box-sizing: border-box;
+	background: #000;
+	text-align: center;
+}
+
+/*------------------------------ youtube ------------------------------*/
+#youtube  {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+#youtube iframe {
+	width: 1200px;
+	height: 640px;
+}
+
+
+/*============================================================================
+
+	Information
+
+============================================================================*/
+#info {
+	position: relative;
+	width: 100%;
+	height: 750px;
+	padding-top: 0;
+	padding-bottom: 130px;
+	overflow: hidden;
+	background-image: url(../img/info_back.png);
+	background-position: top right;
+	display: inline-block;
+}
+
+.info_left {
+	position: absolute;
+	width: 40%;
+	top: 150px;
+	left: 0%;
+	display: inline-block;
+}
+
+.info_right {
+	position: absolute;
+	width: 55%;
+	right: 0;
+	margin: auto;
+	display: inline-block;
+}
+
+.info_jacket img{
+	position: absolute;
+	width: 80%;
+	top: -15%;
+	left: 19%;
+}
+.list {
+	float: right;
+	width: 600px;
+	margin-top: 380px;
+	margin-left: 100px;
+	left: 20%;
+}
+
+.list dt {
+	position: relative;
+	padding: 5px 0 5px 20px;
+	color: #9999FF;
+	font-family: 'Lato', sans-serif;
+	width: 160px;
+	font-size:1.4rem;
+}
+.list dd {
+	margin: -2.2em 0 4px 0;
+	padding: 0 0 4px 180px;
+	color: #fff;
+	font-size:1.2rem;
+}
+.list p {
+	display: inline-block;
+	float: right;
+	font-family: 'Lato', sans-serif;
+	color: #aaaaaa;
+	font-size: 2.5rem;
+	text-align: right;
+	letter-spacing: 4px;
+	margin-top: 30px;
+	padding: 0 20px 0 40px;
+	background: linear-gradient(transparent 60%, #f7f4fb 60%);
+}
+
+#song {
+	position: relative;
+	width: 100%;
+	height: 880px;
+	right: 0;
+	padding-top: 80px;
+	overflow: hidden;
+	z-index: 99;
+}
+
+.tracklist{
+	counter-reset:li;   
+}
+.tracklist li{
+	position:relative;
+	display: block;
+	padding:10px 0px 10px 180px; 
+	margin-left:0px !important;
+	font-size: 5.5rem;
+	color:#fff;
+	font-family:'Goudy Bookletter 1911',Georgia,serif; 
+	background: rgba(0,0,0,0.7);
+}
+li.tracklist-count:after{
+	counter-increment: li;
+	content: counter(li) ".";
+	position: absolute;	
+	display: block;
+	text-align: center;
+	font-style: italic;
+	padding-left:50px;
+	left: 0px;
+	top: -1px;
+	font-size: 6.5rem;
+	color:#fff;
+	font-family:'Goudy Bookletter 1911',Georgia,serif; 
+}
+#song ol li:nth-child(2) {
+	top: 50px;
+}
+#song ol li:nth-child(3) {
+	top: 100px;
+}
+#song ol li:nth-child(4) {
+	top: 150px;
+}
+ 
+/*============================================================================
+
+	link,staff
+
+===========================================================================*/
+#link-staff {
+	position: relative;
+	padding-top: 100px;
+}
+
+#link-staff .inner {
+	width: 1200px;
+	margin: auto;
+	padding-bottom: 40px;
+}
+
+/*------------------------------ link ------------------------------*/
+.link {
+	position: relative;
+	float: left;
+	width: 500px;
+}
+.link_box {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+.link_box dt {
+	margin-top: 18px;
+	padding: 7px 20px;
+	border-bottom: 1px solid #fff;
+	background: #333366;
+	text-align: left;
+	color: #fff;
+}
+.link_box dd {
+	width: 480px;
+	margin-left:0;
+	padding: 10px 10px 10px;
+	background: #333366;
+	color: #fff;
+	text-align: left;
+	word-break:break-all;
+}
+
+/* ------------------------------ staff ------------------------------*/
+.staff {
+	position: relative;
+	float: right;
+	width: 560px;
+	font-size:1.4rem;
+}
+.staff dl {
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 3.7em;
+}
+.staff dt {
+	position: relative;
+	padding: 10px 0 10px 20px;
+	color: #9999FF;
+	font-family: 'Lato', sans-serif;
+	width: 160px;
+}
+.staff dd {
+	margin: -4.4em 0 4px 0;
+	padding: 0 0 4px 180px;
+}
+
+/* ------------------------------ footer ------------------------------*/
+footer {
+	position: relative;
+	width: 100%;
+	height: 60px; 
+	bottom:0px;
+	text-align: center;
+}
+.copyright {
+	width: 100%;
+	color: #000;
+	font-size: 1.0rem;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	letter-spacing: 1px;
+}
+
+
+/* ------------------------------ loading ------------------------------*/
+.loader-wrap{
+	position: fixed;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: #9999FF;
+}
+.loader {
+  color: #ffffff;
+  font-size: 20px;
+  margin: 100px auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  position: relative;
+  text-indent: -9999em;
+  -webkit-animation: load4 1.3s infinite linear;
+  animation: load4 1.3s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+@-webkit-keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+@keyframes load4 {
+  0%,
+  100% {
+    box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+  }
+  12.5% {
+    box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  25% {
+    box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+  }
+  37.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  50% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+  }
+  62.5% {
+    box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+  }
+  75% {
+    box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+  }
+  87.5% {
+    box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+  }
+}
+
+/* ------------------------------ fadeIn ------------------------------*/
+/*左から右にフェードイン*/
+.left-to-right {
+  opacity: 0.0;
+  transform: translateX(-20px);
+  transition: all 1s;
+}
+.left-to-right.scrollin {
+  opacity: 1;
+  transform: translate(0);
+}
+/*左から右にフェードイン*/
+.right-to-left {
+  opacity: 0.0;
+  transform: translateX(20px);
+  transition: all 1s;
+}
+.right-to-left.scrollin {
+  opacity: 1;
+  transform: translate(0);
+}
+/*下から上にフェードイン*/
+.down-to-top {
+  opacity: 0.0;
+  transform: translateY(20px);
+  transition: all 1s;
+}
+.down-to-top.scrollin {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*上から下にフェードイン*/
+.top-to-down {
+  opacity: 0.0;
+  transform: translateY(-20px);
+  transition: all 1s;
+}
+.top-to-down.scrollin {
+  opacity: 1;
+  transform: translateY(0);
+}

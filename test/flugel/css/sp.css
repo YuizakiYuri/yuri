@@ -1,0 +1,288 @@
+/* CSS Document */
+
+@media screen and (max-width:900px) {
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,body {
+	width: 100%;
+    padding: 0px auto;
+    margin: 0 auto;
+}
+body {
+	min-width:360px;
+	max-width: 900px;
+	margin: 0 auto;
+	font-size:12rem;
+}
+
+header, footer, img {
+	width:100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.pc{
+	display:none !important;
+}
+.sp{
+	display:block !important;
+}
+/*============================================================================
+
+	header
+
+============================================================================*/
+header p {
+	display: none;
+}
+	
+	
+	
+/*============================================================================
+
+	#mainvisual
+
+============================================================================*/
+#mainvisual{
+	width:100%;
+	height: 650px;
+    margin: 0 auto;
+}
+#mainvisual h1{
+	top: 470px;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+#mainvisual h1 img{
+	width:100%;
+}
+#mainvisual p{
+	top: 20px;
+	width: 30px;
+}
+#mainvisual p img{
+	width: 30px;
+}
+
+/*============================================================================
+
+	Information
+
+============================================================================*/
+#info {
+	width: 100%;
+	height: auto;
+	padding-top: 0;
+	padding-bottom: 130px;
+	overflow: hidden;
+	background-image: url(../img/info_back.png);
+	background-position: top right;
+}
+
+.info_left {
+	position: relative;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: inline;
+}
+.info_left img {
+	width: 100%;
+	max-width: 425px;
+	margin: 0 auto;
+}
+.info_right {
+	position: relative;
+	width: 100%;
+	right: 0;
+	margin: 0 auto;
+	display: inline;
+}
+
+.list {
+	float: none;
+	width: 100%;
+	margin-top: 100px;
+	margin-left: 0px;
+	left: 0%;
+}
+
+.list dt {
+	position: relative;
+	margin: 0 auto;
+	padding: 0 auto;
+	color: #9999FF;
+	font-family: 'Lato', sans-serif;
+	width: 100%;
+	font-size:1.4rem;
+	text-align: left;
+}
+.list dd {
+	width: 100%;
+	margin: 0 5px 10px 5px;
+	padding: 0 20px 0 20px;
+	color: #fff;
+	font-size:1.4rem;
+	text-align: left;
+}
+
+#song {
+	position: relative;
+	width: 100%;
+	height: auto;
+	right: 0;
+	padding-top: 80px;
+	overflow: hidden;
+	z-index: 99;
+	float:none;
+	display: inline;
+}
+
+.listname{
+	margin-top:200px
+	color:#fff;
+	font-size: 2.0rem;
+	font-family:'Goudy Bookletter 1911',Georgia,serif; 
+}
+.tracklist{
+	counter-reset:li;
+	margin:20px 0px 100px 0px;
+}
+.tracklist li{
+	position:relative;
+	display: block;
+	padding:0 5.5rem; 
+	margin-left:0px !important;
+	font-size: 2.0rem;
+	color:#fff;
+	font-family:'Goudy Bookletter 1911',Georgia,serif; 
+	background: rgba(0,0,0,0.7);
+}
+li.tracklist-count:after{
+	counter-increment: li;
+	content: counter(li) ".";
+	position: absolute;	
+	display: block;
+	text-align: center;
+	font-style: italic;
+	padding-left:20px;
+	left: 0px;
+	top: -1px;
+	font-size: 2.0rem;
+	color:#fff;
+	font-family:'Goudy Bookletter 1911',Georgia,serif; 
+}
+#song ol li:nth-child(2) {
+	top: 50px;
+}
+#song ol li:nth-child(3) {
+	top: 100px;
+}
+#song ol li:nth-child(4) {
+	top: 150px;
+}
+
+/*============================================================================
+
+	Story
+
+============================================================================*/
+#story {
+	top: 0;
+	padding: 80px 0 60px;
+	background-image: url(../images/footer_bg.png) , url(../images/bg.jpg) ;
+	background-position: center bottom;
+	background-attachment: fixed;
+}
+#story p {
+	width: 90%;
+	margin: 0 auto 80px;
+}
+
+/* ---------------------------------------- youtube ----------------------------------------*/
+#youtube  {
+  	width: 100%;
+  	padding-top: 56.25%;
+	margin: 0 auto 20px;
+}
+#youtube iframe {
+  	position: absolute;
+  	top: 0;
+  	right: 0;
+	left: 0;
+	margin: auto;
+  	width: 90% !important;
+  	height: 90% !important;
+}
+
+
+	
+/*============================================================================
+
+	Chara
+
+============================================================================*/
+#chara {
+	top: -110px;
+	position: relative;
+	box-sizing: border-box;
+	background: none;
+}
+
+
+	
+/*============================================================================
+
+	リンク・スタッフ
+
+============================================================================*/
+#link-staff {
+	padding-top: 80px;
+	font-size:14rem;
+}
+#link-staff .inner {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 40px;
+}
+
+/* ---------------------------------------- スタッフ ----------------------------------------*/
+.staff {
+	width: 100%;
+}
+.staff .staff_box {
+	margin: 0 auto 10px;
+	text-align: center;
+}
+.staff dl {
+	border-bottom: 1px solid #e5e5e5;
+	line-height: 3.0em;
+	text-align: center;
+}
+.staff dt {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	color: #9999FF;
+	font-family: 'Lato', sans-serif;
+}
+.staff dd {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+}
