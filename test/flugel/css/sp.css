@@ -78,8 +78,10 @@ header p {
 	z-index: 90;
 }
 #mainvisual .catch{
-	top:55%;
+	top:0%;
 	width: 100%;
+	left: 0%;
+	margin: 5% auto;
 	text-align: center;
 }
 /*---------------------------------------------------------------------
