@@ -755,6 +755,14 @@ input.check, input.radio {
     font-weight: bold;
     top: 34px;
 }
+.youtube {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+.youtube iframe {
+  width: 100%;
+  height: 100%;
+}
 
 /* ------------------------------------- discography ------------------------------------- */
 .discography {
@@ -762,6 +770,7 @@ input.check, input.radio {
 	margin: 3em 0em 3em 0em;
 }
 .Discography_thumbnail {
+	width: 50%;
 	float: left;
 	margin-right: 40px;
 }
@@ -769,7 +778,7 @@ table.Discography_table  table, td, th{
 	border: none;
 }
 table.Discography_table {
-	width: 400px;
+	width: 40%;
 	border: 0px #eee solid;
 	border-top: solid 1px #eee;
 	border-bottom: solid 1px #eee;
