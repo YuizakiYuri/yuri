@@ -81,7 +81,7 @@
 	}
 	/* Header & HERO styles*/
 	.header {
-		width: 80%;
+		width: 100%;
 		height: 75px;
 		background-color: rgba(70,70,55,100);
 		margin: 0 auto;
@@ -109,17 +109,18 @@
 	}
 
 	.topnav .menu .menu-item {
-	  flex: 1;
+	  flex: 1 0 auto;
 	}
 
 	.topnav .menu .menu-item a {
 	  color: #fff;
-	  width: 70px;
+	  width: auto;
 	  text-align: center;
 	  display: block;
 	  padding: 0.6em 0.4em;
 	  text-align: center;
 	  text-decoration: none;
+	  flex-basis: auto;
 	}
 
 	.topnav .menu .menu-item a:hover {
@@ -754,6 +755,62 @@ input.check, input.radio {
     font-weight: bold;
     top: 34px;
 }
+
+/* ------------------------------------- discography ------------------------------------- */
+.discography {
+	width: auto;
+	margin: 3em 0em 3em 0em;
+}
+.Discography_thumbnail {
+	float: left;
+	margin-right: 40px;
+}
+table.Discography_table  table, td, th{
+	border: none;
+}
+table.Discography_table {
+	width: 400px;
+	border: 0px #eee solid;
+	border-top: solid 1px #eee;
+	border-bottom: solid 1px #eee;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+table.Discography_table th {
+	width: 100px;
+	height: 38px;
+	vertical-align: middle;
+	border-right: solid 1px #eee;
+	text-align: center;
+}
+table.Discography_table td {
+	width: 60%;
+	height: 38px;
+	padding-left: 30px;
+	line-height: 16px;
+	vertical-align: middle;
+}
+table.Discography_table td.bar {
+	width: 100%;
+	height: 1px;
+	border-top: solid 1px #eee;
+}
+.btn01 {
+	margin-top: 20px;
+	text-align: right;
+	font-family: 'Noto Serif JP', serif;
+	font-size: 15px;
+}
+.btn01 i {
+	padding-right: 10px;
+	font-size: 12px;
+	transition: 0.3s ease-out;
+}
+.btn01:hover i {
+	padding-right: 5px;
+}
+
+
 /* ------------------------------------- audio.js ------------------------------------- */
 
 .audiojs audio {
