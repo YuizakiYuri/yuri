@@ -764,6 +764,61 @@ input.check, input.radio {
   height: 100%;
 }
 
+.card-container{
+    display:flex;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+/*モバイルファースト*/
+
+.card-container{
+    display: flex;
+    margin: 5px auto;
+    width: 100%;
+}
+.card-container a{
+    text-decoration: none;
+    color: #cddc39;
+}
+
+.card-text{
+    width:45%;
+    margin: 10px 20px;
+}
+.card-text h2{
+    padding-top: 10px;
+    font-size: 1em;
+}
+.card-text p{
+    font-size: 0.6em;
+}
+.card-img{
+    width: 50%;
+}
+
+img{
+    width:100%;
+    height:auto;
+    vertical-align:bottom;
+}
+
+/*PCサイズ*/
+
+@media screen and (min-width:650px) {
+    .card-container{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .card-text h2{
+        font-size: 1.3em;
+    }
+    .card-text p{
+        font-size: 1em;
+    }
+}
 /* ------------------------------------- discography ------------------------------------- */
 .discography {
 	width: auto;
