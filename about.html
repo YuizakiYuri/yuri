@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="mailform.css">
     <link rel="stylesheet" type="text/css" media="only screen and (max-device-width:599px)" href="sp.css">
     <link rel="stylesheet" type="text/css" media="screen and (min-device-width:600px)" href="style.css">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js""></script>
     <script src="https://apis.google.com/js/platform.js"></script>
 </head>
 
@@ -38,15 +38,15 @@
     <!--HERO section ends here-->
     <!--Container-->
     <div class="container">
-        <ul class="breadcrumb">
-            <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-                <a href="index.html" itemprop="url">
-                    <span itemprop="title">ホーム</span>
+        <ul class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="index.html" itemprop="item">
+                    <span itemprop="name">ホーム</span>
                 </a>
             </li>
-            <li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
-                <a href="about.html" itemprop="url">
-                    <span itemprop="title">About</span>
+            <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                <a href="about.html" itemprop="item">
+                    <span itemprop="name">About</span>
                 </a>
             </li>
         </ul>
